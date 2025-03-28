@@ -89,7 +89,7 @@ export const originSources = {
     name: "36氪",
     type: "realtime",
     color: "blue",
-    disable: "true",
+    disable: true,
     home: "https://36kr.com",
     column: "tech",
     sub: {
@@ -146,10 +146,10 @@ export const originSources = {
     home: "https://www.thepaper.cn",
     disable: true,
   },
-  "sputniknewscn": {
+  "sputniknews": {
     name: "卫星通讯社",
     color: "orange",
-    disable: "true",
+    disable: true,
     column: "world",
     home: "https://sputniknews.cn",
   },
@@ -278,9 +278,9 @@ export const originSources = {
     name: "快手",
     type: "hottest",
     column: "china",
-    color: "orange",
-    disable: "true",
+    color: "gray",
     home: "https://www.kuaishou.com",
+    disable: true,
   },
   "kaopu": {
     name: "靠谱新闻",
@@ -307,23 +307,12 @@ export const originSources = {
     home: "https://www.baidu.com",
   },
   "linuxdo": {
-    name: "LINUX DO",
+    name: "LinuxDo",
+    type: "realtime",
     column: "tech",
     color: "slate",
-    home: "https://linux.do/",
-    disable: "true",
-    sub: {
-      latest: {
-        title: "最新",
-        home: "https://linux.do/latest",
-      },
-      hot: {
-        title: "今日最热",
-        type: "hottest",
-        interval: Time.Common,
-        home: "https://linux.do/hot",
-      },
-    },
+    home: "https://linux.do",
+    disable: true,
   },
   "gamebiz": {
     name: "GameBiz",
