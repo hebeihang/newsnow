@@ -41,7 +41,7 @@ export function SearchBar() {
   const sourceItems = useMemo(
     () =>
       groupByColumn(typeSafeObjectEntries(sources)
-        .filter(([_, source]) => !source.redirect)
+        .filter(([_, source]) => !source.redirect && !source.disable)
         .map(([k, source]) => ({
           id: k,
           title: source.title,
@@ -53,7 +53,7 @@ export function SearchBar() {
   )
   const inputRef = useRef<HTMLInputElement | null>(null)
 
-  const [value, setValue] = useState<SourceID>("github-trending-today")
+  const [value, setValue] = useState<SourceID>("baidu")
 
   useMount(() => {
     inputRef?.current?.focus()
