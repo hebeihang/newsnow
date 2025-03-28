@@ -313,7 +313,7 @@ export const originSources = {
     home: "https://gamebiz.jp/",
     sub: {
       quick: {
-        title: "最新ニュース",
+        title: "日本业界新闻",
         interval: Time.Default, // 使用默认的10分钟间隔
       },
     },
