@@ -279,7 +279,7 @@ export const originSources = {
     type: "hottest",
     column: "china",
     color: "orange",
-    disable: "cf",
+    disable: "true",
     home: "https://www.kuaishou.com",
   },
   "kaopu": {
@@ -311,7 +311,7 @@ export const originSources = {
     column: "tech",
     color: "slate",
     home: "https://linux.do/",
-    disable: "cf",
+    disable: "true",
     sub: {
       latest: {
         title: "最新",
@@ -328,7 +328,7 @@ export const originSources = {
   "gamebiz": {
     name: "GameBiz",
     type: "realtime",
-    column: "tech",
+    column: "jp",
     color: "blue",
     home: "https://gamebiz.jp/",
     sub: {
