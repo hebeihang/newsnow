@@ -89,7 +89,7 @@ export const originSources = {
     name: "36氪",
     type: "realtime",
     color: "blue",
-    disable: "cf",
+    disable: "true",
     home: "https://36kr.com",
     column: "tech",
     sub: {
@@ -149,7 +149,7 @@ export const originSources = {
   "sputniknewscn": {
     name: "卫星通讯社",
     color: "orange",
-    disable: "cf",
+    disable: "true",
     column: "world",
     home: "https://sputniknews.cn",
   },
