@@ -1,4 +1,23 @@
 {
+  "gamesindustry": {
+    "redirect": "gamesindustry-quick",
+    "name": "GIBiz",
+    "type": "realtime",
+    "column": "world",
+    "home": "https://www.gamesindustry.biz",
+    "color": "blue",
+    "interval": 300000,
+    "title": "产业新闻"
+  },
+  "gamesindustry-quick": {
+    "name": "GIBiz",
+    "type": "realtime",
+    "column": "world",
+    "home": "https://www.gamesindustry.biz",
+    "color": "blue",
+    "interval": 300000,
+    "title": "产业新闻"
+  },
   "baidu": {
     "name": "百度热搜",
     "type": "hottest",
@@ -15,7 +34,7 @@
     "home": "https://gamebiz.jp/",
     "color": "blue",
     "interval": 600000,
-    "title": "日本业界新闻"
+    "title": "日本产业新闻"
   },
   "gamebiz-quick": {
     "name": "GameBiz",
@@ -24,6 +43,44 @@
     "home": "https://gamebiz.jp/",
     "color": "blue",
     "interval": 600000,
-    "title": "日本业界新闻"
+    "title": "日本产业新闻"
+  },
+  "gamedeveloper": {
+    "redirect": "gamedeveloper-quick",
+    "name": "GameDev",
+    "type": "realtime",
+    "column": "world",
+    "home": "https://www.gamedeveloper.com",
+    "color": "blue",
+    "interval": 600000,
+    "title": "开发新闻"
+  },
+  "gamedeveloper-quick": {
+    "name": "GameDev",
+    "type": "realtime",
+    "column": "world",
+    "home": "https://www.gamedeveloper.com",
+    "color": "blue",
+    "interval": 600000,
+    "title": "开发新闻"
+  },
+  "thisisgame": {
+    "redirect": "thisisgame-quick",
+    "name": "ThisIsGame",
+    "type": "realtime",
+    "column": "world",
+    "home": "https://www.thisisgame.com",
+    "color": "blue",
+    "interval": 600000,
+    "title": "韩国游戏新闻"
+  },
+  "thisisgame-quick": {
+    "name": "ThisIsGame",
+    "type": "realtime",
+    "column": "world",
+    "home": "https://www.thisisgame.com",
+    "color": "blue",
+    "interval": 600000,
+    "title": "韩国游戏新闻"
   }
 }

@@ -248,6 +248,19 @@ export const originSources = {
     home: "https://www.producthunt.com/",
     disable: true,
   },
+  "gamesindustry": {
+    name: "GIBiz",
+    color: "blue",
+    column: "world",
+    type: "realtime",
+    home: "https://www.gamesindustry.biz",
+    sub: {
+      quick: {
+        title: "产业新闻",
+        interval: Time.Fast,
+      },
+    },
+  },
   "github": {
     name: "Github",
     color: "gray",
@@ -322,8 +335,35 @@ export const originSources = {
     home: "https://gamebiz.jp/",
     sub: {
       quick: {
-        title: "日本业界新闻",
+        title: "日本产业新闻",
         interval: Time.Default, // 使用默认的10分钟间隔
+      },
+    },
+  },
+  "gamedeveloper": {
+    name: "GameDev",
+    type: "realtime",
+    column: "world",
+    color: "blue",
+    home: "https://www.gamedeveloper.com",
+    logo: "/icons/gamedev.png",
+    sub: {
+      quick: {
+        title: "开发新闻",
+        interval: Time.Default,
+      },
+    },
+  },
+  "thisisgame": {
+    name: "ThisIsGame",
+    type: "realtime",
+    column: "world",
+    color: "blue",
+    home: "https://www.thisisgame.com",
+    sub: {
+      quick: {
+        title: "韩国游戏新闻",
+        interval: Time.Default,
       },
     },
   },
