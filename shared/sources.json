@@ -1,4 +1,23 @@
 {
+  "3dm": {
+    "redirect": "3dm-quick",
+    "name": "3DM游戏网",
+    "type": "realtime",
+    "column": "tech",
+    "home": "https://www.3dmgame.com",
+    "color": "blue",
+    "interval": 600000,
+    "title": "游戏新闻"
+  },
+  "3dm-quick": {
+    "name": "3DM游戏网",
+    "type": "realtime",
+    "column": "tech",
+    "home": "https://www.3dmgame.com",
+    "color": "blue",
+    "interval": 600000,
+    "title": "游戏新闻"
+  },
   "gamesindustry": {
     "redirect": "gamesindustry-quick",
     "name": "GIBiz",

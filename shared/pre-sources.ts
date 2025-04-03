@@ -25,6 +25,18 @@ export const originSources = {
       },
     },
   },
+  "3dm": {
+    name: "3DM游戏网",
+    type: "realtime",
+    column: "tech",
+    color: "blue",
+    home: "https://www.3dmgame.com",
+    sub: {
+      quick: {
+        title: "游戏新闻",
+      },
+    },
+  },
   "zhihu": {
     name: "知乎",
     type: "hottest",

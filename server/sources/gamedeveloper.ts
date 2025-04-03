@@ -13,6 +13,7 @@ const quick = defineSource(async () => {
     const link = $(element).find("link").text().trim()
     const pubDate = $(element).find("pubDate").text().trim()
     const description = $(element).find("description").text().trim()
+    const creator = $(element).find("dc\\:creator").text().trim()
 
     if (title && link) {
       news.push({
@@ -21,7 +22,8 @@ const quick = defineSource(async () => {
         url: link,
         pubDate,
         extra: {
-          info: description,
+          hover: description,
+          info: creator || undefined,
         },
       })
     }

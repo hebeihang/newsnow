@@ -13,7 +13,7 @@ const quick = defineSource(async () => {
     const linkElement = $(element).find(".archive__title a")
     const link = linkElement.attr("href")
     const publishedAt = $(element).find(".archive__date").text().trim()
-    const _author = $(element).find(".archive__author").text().trim()
+    const author = $(element).find(".archive__author").text().trim()
     const strapline = $(element).find(".archive__strapline").text().trim()
 
     if (title && link) {
@@ -28,8 +28,8 @@ const quick = defineSource(async () => {
         url: fullLink,
         pubDate: publishedAt,
         extra: {
-          info: strapline,
           hover: strapline,
+          info: author || undefined,
         },
       })
     }
