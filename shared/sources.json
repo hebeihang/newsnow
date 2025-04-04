@@ -101,5 +101,24 @@
     "color": "blue",
     "interval": 600000,
     "title": "韩国游戏新闻"
+  },
+  "indienova": {
+    "redirect": "indienova-recent",
+    "name": "IndieNova",
+    "type": "realtime",
+    "column": "china",
+    "home": "https://indienova.com",
+    "color": "violet",
+    "interval": 600000,
+    "title": "独立游戏"
+  },
+  "indienova-recent": {
+    "name": "IndieNova",
+    "type": "realtime",
+    "column": "china",
+    "home": "https://indienova.com",
+    "color": "violet",
+    "interval": 600000,
+    "title": "独立游戏"
   }
 }

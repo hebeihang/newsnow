@@ -13,9 +13,12 @@ const quick = defineSource(async () => {
     const link = $(element).find("link").text().trim()
     const pubDate = $(element).find("pubDate").text().trim()
     const description = $(element).find("description").text().trim()
-    const creator = $(element).find("dc\\:creator").text().trim()
 
     if (title && link) {
+      // 从 URL 中提取子文件夹名
+      const folderMatch = link.match(/gamedeveloper\.com\/([^/]+)\//)
+      const folder = folderMatch ? folderMatch[1] : undefined
+
       news.push({
         id: link,
         title,
@@ -23,7 +26,7 @@ const quick = defineSource(async () => {
         pubDate,
         extra: {
           hover: description,
-          info: creator || undefined,
+          info: folder,
         },
       })
     }

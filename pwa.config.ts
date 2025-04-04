@@ -5,6 +5,7 @@ import { VitePWA } from "vite-plugin-pwa"
 const pwaOption: Partial<VitePWAOptions> = {
   includeAssets: ["icon.svg", "apple-touch-icon.png"],
   filename: "swx.js",
+  registerType: "autoUpdate", // ✅ 自动更新 SW
   manifest: {
     name: "NewsNow",
     short_name: "NewsNow",
@@ -37,9 +38,10 @@ const pwaOption: Partial<VitePWAOptions> = {
   },
   workbox: {
     navigateFallbackDenylist: [/^\/api/],
+    cleanupOutdatedCaches: true, // ✅ 清理旧缓存
   },
   devOptions: {
-    enabled: process.env.SW_DEV === "true",
+    enabled: process.env.SW_DEV === "true", // ✅ 只在 SW_DEV=true 时启用 PWA
     type: "module",
     navigateFallback: "index.html",
   },

@@ -70,6 +70,17 @@
     }
   </script>
   <title>NewsNow</title>
+  <script>
+    if (location.hostname === 'localhost' && 'serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(registrations => {
+        for (const reg of registrations) {
+          reg.unregister().then(() => {
+            console.log('[dev] Unregistered old Service Worker:', reg);
+          });
+        }
+      });
+    }
+  </script>
 </head>
 
 <body>

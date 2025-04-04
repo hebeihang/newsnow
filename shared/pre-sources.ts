@@ -1,7 +1,7 @@
 import process from "node:process"
+import type { OriginSource, Source, SourceID } from "@shared/types"
 import { Interval } from "./consts"
 import { typeSafeObjectFromEntries } from "./type.util"
-import type { OriginSource, Source, SourceID } from "./types"
 
 const Time = {
   Test: 1,
@@ -358,7 +358,6 @@ export const originSources = {
     column: "world",
     color: "blue",
     home: "https://www.gamedeveloper.com",
-    logo: "/icons/gamedev.png",
     sub: {
       quick: {
         title: "开发新闻",
@@ -376,6 +375,18 @@ export const originSources = {
       quick: {
         title: "韩国游戏新闻",
         interval: Time.Default,
+      },
+    },
+  },
+  "indienova": {
+    name: "IndieNova",
+    type: "realtime",
+    column: "china",
+    color: "violet",
+    home: "https://indienova.com",
+    sub: {
+      recent: {
+        title: "独立游戏",
       },
     },
   },
@@ -423,4 +434,16 @@ export function genSources() {
       return true
     }
   }))
+}
+
+export interface PreSource {
+  name: string
+  type: string
+  column: string
+  home: string
+  color: string
+  interval: number
+  title?: string
+  path?: string
+  redirect?: string
 }

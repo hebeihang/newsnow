@@ -2,7 +2,7 @@
 
 declare module 'glob:./sources/{*.ts,**/index.ts}' {
   export const _36kr: typeof import('./sources/_36kr')
-  export const _3dm: typeof import('./sources/_3dm')
+  export const _3dm_news: typeof import('./sources/_3dm_news')
   export const baidu: typeof import('./sources/baidu')
   export const bilibili: typeof import('./sources/bilibili')
   export const cankaoxiaoxi: typeof import('./sources/cankaoxiaoxi')
@@ -16,6 +16,7 @@ declare module 'glob:./sources/{*.ts,**/index.ts}' {
   export const gelonghui: typeof import('./sources/gelonghui')
   export const github: typeof import('./sources/github')
   export const hackernews: typeof import('./sources/hackernews')
+  export const indienova_recent: typeof import('./sources/indienova_recent')
   export const ithome: typeof import('./sources/ithome')
   export const jin10: typeof import('./sources/jin10')
   export const kaopu: typeof import('./sources/kaopu')
