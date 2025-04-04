@@ -1,7 +1,9 @@
 import type { NewsItem } from "@shared/types"
 import { load } from "cheerio"
+import { myFetch } from "#/utils/fetch"
+import { defineSource } from "#/utils/source"
 
-const quick = defineSource(async () => {
+const news = defineSource(async () => {
   const baseURL = "https://gamebiz.jp"
   const url = `${baseURL}/news`
   const response = await myFetch(url) as any
@@ -19,22 +21,22 @@ const quick = defineSource(async () => {
       console.log(`Original link: ${link}`)
       console.log(`Link starts with http: ${link.startsWith("http")}`)
       console.log(`Link starts with /: ${link.startsWith("/")}`)
-      
+
       let fullLink = link
       if (!link.startsWith("http")) {
         fullLink = `${baseURL}${link.startsWith("/") ? link : `/${link}`}`
       }
-      
+
       console.log(`Final link: ${fullLink}`)
-      
+
       news.push({
         id: link,
         title,
         url: fullLink,
         pubDate: publishedAt,
         extra: {
-          info: category
-        }
+          info: category,
+        },
       })
     } else {
       console.log(`Missing link for title: ${title}`)
@@ -44,7 +46,6 @@ const quick = defineSource(async () => {
   return news
 })
 
-export default defineSource({
-  "gamebiz": quick,
-  "gamebiz-quick": quick,
-}) 
+export default {
+  "gamebiz-news": news,
+}

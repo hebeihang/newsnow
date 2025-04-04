@@ -68,5 +68,5 @@ const quick = defineSource(async () => {
 })
 
 export default {
-  "3dm-quick": quick,
+  "3dm-news": quick,
 }

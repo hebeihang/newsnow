@@ -1,25 +1,34 @@
 {
   "3dm": {
-    "redirect": "3dm-quick",
-    "name": "3DM游戏网",
+    "redirect": "3dm-news",
+    "name": "3DM",
     "type": "realtime",
-    "column": "tech",
+    "column": "china",
     "home": "https://www.3dmgame.com",
     "color": "blue",
     "interval": 600000,
-    "title": "游戏新闻"
+    "title": "新闻"
   },
-  "3dm-quick": {
-    "name": "3DM游戏网",
+  "3dm-news": {
+    "name": "3DM",
     "type": "realtime",
-    "column": "tech",
+    "column": "china",
     "home": "https://www.3dmgame.com",
     "color": "blue",
     "interval": 600000,
-    "title": "游戏新闻"
+    "title": "新闻"
+  },
+  "3dm-metacritic": {
+    "name": "3DM",
+    "type": "realtime",
+    "column": "china",
+    "home": "https://www.3dmgame.com",
+    "color": "blue",
+    "interval": 600000,
+    "title": "评测"
   },
   "gamesindustry": {
-    "redirect": "gamesindustry-quick",
+    "redirect": "gamesindustry-news",
     "name": "GIBiz",
     "type": "realtime",
     "column": "world",
@@ -28,7 +37,7 @@
     "interval": 300000,
     "title": "产业新闻"
   },
-  "gamesindustry-quick": {
+  "gamesindustry-news": {
     "name": "GIBiz",
     "type": "realtime",
     "column": "world",
@@ -46,7 +55,7 @@
     "interval": 600000
   },
   "gamebiz": {
-    "redirect": "gamebiz-quick",
+    "redirect": "gamebiz-news",
     "name": "GameBiz",
     "type": "realtime",
     "column": "jp",
@@ -55,7 +64,7 @@
     "interval": 600000,
     "title": "日本产业新闻"
   },
-  "gamebiz-quick": {
+  "gamebiz-news": {
     "name": "GameBiz",
     "type": "realtime",
     "column": "jp",
@@ -65,7 +74,7 @@
     "title": "日本产业新闻"
   },
   "gamedeveloper": {
-    "redirect": "gamedeveloper-quick",
+    "redirect": "gamedeveloper-news",
     "name": "GameDev",
     "type": "realtime",
     "column": "world",
@@ -74,7 +83,7 @@
     "interval": 600000,
     "title": "开发新闻"
   },
-  "gamedeveloper-quick": {
+  "gamedeveloper-news": {
     "name": "GameDev",
     "type": "realtime",
     "column": "world",
@@ -84,7 +93,7 @@
     "title": "开发新闻"
   },
   "thisisgame": {
-    "redirect": "thisisgame-quick",
+    "redirect": "thisisgame-news",
     "name": "ThisIsGame",
     "type": "realtime",
     "column": "world",
@@ -93,7 +102,7 @@
     "interval": 600000,
     "title": "韩国游戏新闻"
   },
-  "thisisgame-quick": {
+  "thisisgame-news": {
     "name": "ThisIsGame",
     "type": "realtime",
     "column": "world",
@@ -120,5 +129,14 @@
     "color": "violet",
     "interval": 600000,
     "title": "独立游戏"
+  },
+  "indienova-development": {
+    "name": "IndieNova",
+    "type": "realtime",
+    "column": "china",
+    "home": "https://indienova.com",
+    "color": "violet",
+    "interval": 600000,
+    "title": "开发"
   }
 }

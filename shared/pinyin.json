@@ -1,9 +1,11 @@
 {
-  "3dm-quick": "3DMyouxiwang-youxixinwen",
-  "gamesindustry-quick": "GIBiz-chanyexinwen",
+  "3dm-news": "3DM-xinwen",
+  "3dm-metacritic": "3DM-pingce",
+  "gamesindustry-news": "GIBiz-chanyexinwen",
   "baidu": "baiduresou",
-  "gamebiz-quick": "GameBiz-ribenchanyexinwen",
-  "gamedeveloper-quick": "GameDev-kaifaxinwen",
-  "thisisgame-quick": "ThisIsGame-hanguoyouxixinwen",
-  "indienova-recent": "IndieNova-duliyouxi"
+  "gamebiz-news": "GameBiz-ribenchanyexinwen",
+  "gamedeveloper-news": "GameDev-kaifaxinwen",
+  "thisisgame-news": "ThisIsGame-hanguoyouxixinwen",
+  "indienova-recent": "IndieNova-duliyouxi",
+  "indienova-development": "IndieNova-kaifa"
 }

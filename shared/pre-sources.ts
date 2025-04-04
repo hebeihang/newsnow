@@ -26,14 +26,17 @@ export const originSources = {
     },
   },
   "3dm": {
-    name: "3DM游戏网",
+    name: "3DM",
     type: "realtime",
-    column: "tech",
+    column: "china",
     color: "blue",
     home: "https://www.3dmgame.com",
     sub: {
-      quick: {
-        title: "游戏新闻",
+      news: {
+        title: "新闻",
+      },
+      metacritic: {
+        title: "评测",
       },
     },
   },
@@ -81,7 +84,7 @@ export const originSources = {
     home: "https://wallstreetcn.com/",
     disable: true,
     sub: {
-      quick: {
+      flash: {
         type: "realtime",
         interval: Time.Fast,
         title: "实时快讯",
@@ -105,7 +108,7 @@ export const originSources = {
     home: "https://36kr.com",
     column: "tech",
     sub: {
-      quick: {
+      news: {
         title: "快讯",
       },
     },
@@ -267,7 +270,7 @@ export const originSources = {
     type: "realtime",
     home: "https://www.gamesindustry.biz",
     sub: {
-      quick: {
+      news: {
         title: "产业新闻",
         interval: Time.Fast,
       },
@@ -346,9 +349,9 @@ export const originSources = {
     color: "blue",
     home: "https://gamebiz.jp/",
     sub: {
-      quick: {
+      news: {
         title: "日本产业新闻",
-        interval: Time.Default, // 使用默认的10分钟间隔
+        interval: Time.Default,
       },
     },
   },
@@ -359,7 +362,7 @@ export const originSources = {
     color: "blue",
     home: "https://www.gamedeveloper.com",
     sub: {
-      quick: {
+      news: {
         title: "开发新闻",
         interval: Time.Default,
       },
@@ -372,7 +375,7 @@ export const originSources = {
     color: "blue",
     home: "https://www.thisisgame.com",
     sub: {
-      quick: {
+      news: {
         title: "韩国游戏新闻",
         interval: Time.Default,
       },
@@ -387,6 +390,13 @@ export const originSources = {
     sub: {
       recent: {
         title: "独立游戏",
+      },
+      article: {
+        title: "文章",
+        disable: true,
+      },
+      development: {
+        title: "开发",
       },
     },
   },

@@ -1,7 +1,9 @@
 import type { NewsItem } from "@shared/types"
 import { load } from "cheerio"
+import { myFetch } from "#/utils/fetch"
+import { defineSource } from "#/utils/source"
 
-const quick = defineSource(async () => {
+const news = defineSource(async () => {
   const baseURL = "https://www.gamedeveloper.com"
   const url = `${baseURL}/rss.xml`
   const response = await myFetch(url) as any
@@ -35,7 +37,6 @@ const quick = defineSource(async () => {
   return news
 })
 
-export default defineSource({
-  "gamedeveloper": quick,
-  "gamedeveloper-quick": quick,
-})
+export default {
+  "gamedeveloper-news": news,
+}

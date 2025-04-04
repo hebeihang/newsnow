@@ -1,12 +1,14 @@
 import type { NewsItem } from "@shared/types"
 import { load } from "cheerio"
+import { myFetch } from "#/utils/fetch"
+import { defineSource } from "#/utils/source"
 
-const quick = defineSource(async () => {
+const news = defineSource(async () => {
   const baseURL = "https://www.thisisgame.com"
   const url = `${baseURL}/webzine/news/nboard/4/?category=2`
   const response = await myFetch(url) as any
   const $ = load(response)
-  const news: NewsItem[] = []
+  const newsItems: NewsItem[] = []
 
   $(".article-info").each((_, element) => {
     const title = $(element).find(".subject a").text().trim()
@@ -20,7 +22,7 @@ const quick = defineSource(async () => {
         fullLink = `${baseURL}/webzine/news/nboard/4/${link}`
       }
 
-      news.push({
+      newsItems.push({
         id: link,
         title,
         url: fullLink,
@@ -32,10 +34,9 @@ const quick = defineSource(async () => {
     }
   })
 
-  return news
+  return newsItems
 })
 
-export default defineSource({
-  "thisisgame": quick,
-  "thisisgame-quick": quick,
-})
+export default {
+  "thisisgame-news": news,
+}
