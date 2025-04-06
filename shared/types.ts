@@ -43,7 +43,7 @@ export interface OriginSource extends Partial<Omit<Source, "name" | "redirect">>
      * Subtitle 小标题
      */
     title: string
-    // type?: "hottest" | "realtime"
+    // type?: "dev" | "hottest" | "realtime"
     // desc?: string
     // column?: ManualColumnID
     // color?: Color
@@ -69,7 +69,7 @@ export interface Source {
   /**
    * Default normal timeline
    */
-  type?: "hottest" | "realtime"
+  type?: "dev" | "hottest" | "realtime"
   column?: HiddenColumnID
   home?: string
   /**

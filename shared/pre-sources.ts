@@ -383,13 +383,13 @@ export const originSources = {
   },
   "indienova": {
     name: "IndieNova",
-    type: "realtime",
     column: "china",
     color: "violet",
     home: "https://indienova.com",
     sub: {
       recent: {
         title: "独立游戏",
+        type: "realtime",
       },
       article: {
         title: "文章",
@@ -397,8 +397,18 @@ export const originSources = {
       },
       development: {
         title: "开发",
+        type: "dev",
       },
     },
+  },
+  "famitsu_rank": {
+    name: "Famitsu",
+    type: "dev",
+    column: "jp",
+    color: "blue",
+    home: "https://www.famitsu.com",
+    title: "游戏销量榜",
+    interval: Time.Default,
   },
 } as const satisfies Record<string, OriginSource>
 

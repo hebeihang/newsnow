@@ -76,7 +76,7 @@
   "gamedeveloper": {
     "redirect": "gamedeveloper-news",
     "name": "GameDev",
-    "type": "realtime",
+    "type": "dev",
     "column": "world",
     "home": "https://www.gamedeveloper.com",
     "color": "blue",
@@ -132,11 +132,20 @@
   },
   "indienova-development": {
     "name": "IndieNova",
-    "type": "realtime",
+    "type": "dev",
     "column": "china",
     "home": "https://indienova.com",
     "color": "violet",
     "interval": 600000,
     "title": "开发"
+  },
+  "famitsu_rank": {
+    "name": "Famitsu",
+    "type": "hottest",
+    "column": "jp",
+    "home": "https://www.famitsu.com",
+    "color": "blue",
+    "interval": 600000,
+    "title": "游戏销量榜"
   }
 }
