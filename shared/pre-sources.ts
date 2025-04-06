@@ -403,7 +403,7 @@ export const originSources = {
   },
   "famitsu_rank": {
     name: "Famitsu",
-    type: "dev",
+    type: "hottest",
     column: "jp",
     color: "blue",
     home: "https://www.famitsu.com",
