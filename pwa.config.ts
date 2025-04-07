@@ -7,9 +7,9 @@ const pwaOption: Partial<VitePWAOptions> = {
   filename: "swx.js",
   registerType: "autoUpdate", // ✅ 自动更新 SW
   manifest: {
-    name: "NewsNow",
-    short_name: "NewsNow",
-    description: "Elegant reading of real-time and hottest news",
+    name: "GameTrend",
+    short_name: "GameTrend",
+    description: "优雅的游戏资讯聚合网站",
     theme_color: "#F14D42",
     icons: [
       {

@@ -44,12 +44,12 @@ export function Header() {
     <>
       <span className="flex justify-self-start">
         <Link to="/" className="flex gap-2 items-center">
-          <div className="h-10 w-10 bg-cover" title="logo" style={{ backgroundImage: "url(/icon.svg)" }} />
+          <div className="h-12 w-12 bg-contain bg-center bg-no-repeat" title="logo" style={{ backgroundImage: "url(/icon.svg)" }} />
           <span className="text-2xl font-brand line-height-none!">
-            <p>News</p>
+            <p></p>
             <p className="mt--1">
-              <span className="color-primary-6">N</span>
-              <span>ow</span>
+              <span className="color-primary-6"></span>
+              <span></span>
             </p>
           </span>
         </Link>
