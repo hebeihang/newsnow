@@ -57,9 +57,9 @@
         return ""
       }
     }
-    const theme = safeParseString(localStorage.getItem("color-scheme")) || "dark"
+    const theme = safeParseString(localStorage.getItem("color-scheme")) || "light"
     const isDark = window.matchMedia("(prefers-color-scheme: dark)").matches
-    if (theme !== "light") {
+    if (theme === "dark") {
       document.documentElement.classList.add("dark")
     }
 

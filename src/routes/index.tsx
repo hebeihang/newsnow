@@ -1,9 +1,14 @@
-import { createFileRoute } from "@tanstack/react-router"
+import { createFileRoute, redirect } from "@tanstack/react-router"
 import { focusSourcesAtom } from "~/atoms"
 import { Column } from "~/components/column"
 
 export const Route = createFileRoute("/")({
   component: IndexComponent,
+  beforeLoad: () => {
+    throw redirect({
+      to: "/c/realtime",
+    })
+  },
 })
 
 function IndexComponent() {
