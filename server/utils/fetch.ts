@@ -1,31 +1,56 @@
 import { $fetch } from "ofetch"
+import { logger } from "./logger"
 
 export const myFetch = $fetch.create({
   headers: {
-    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+    "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
   },
-  timeout: 10000,
-  retry: 5,
-  retryDelay: 1000,
-  onResponseError({ response }) {
-    if (response.status >= 500 || response.status === 506) {
-      throw new Error(`HTTP Error: ${response.status}`)
-    }
+  timeout: 15000,
+  retry: 3,
+  retryDelay: 2000,
+  onRequest({ options, request }) {
+    logger.info("发起请求", {
+      url: request,
+      headers: options.headers,
+    })
   },
-  onRequest({ options }) {
-    // 在 Cloudflare Workers 中，需要设置特定的请求头
-    const headers = new Headers(options.headers)
-    headers.set("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8")
-    headers.set("Accept-Language", "zh-CN,zh;q=0.9,en;q=0.8")
-    headers.set("Cache-Control", "no-cache")
-    headers.set("Pragma", "no-cache")
-    options.headers = headers
+  onRequestError({ error, request }) {
+    logger.error("请求错误", {
+      url: request,
+      error: error.message,
+      stack: error.stack,
+    })
   },
   onResponse({ response }) {
-    // 确保响应是字符串类型
+    logger.info("收到响应", {
+      status: response.status,
+      headers: response.headers,
+      size: response._data?.length,
+    })
     if (typeof response._data === "string") {
       return response._data
     }
     return response._data
+  },
+  onResponseError({ response, error }) {
+    logger.error("响应错误", {
+      status: response.status,
+      error: error.message,
+      data: response._data,
+    })
+    if (response.status >= 500 || response.status === 506) {
+      throw new Error(`HTTP Error: ${response.status}`)
+    }
   },
 })
