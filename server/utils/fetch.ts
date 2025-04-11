@@ -13,13 +13,23 @@ export const myFetch = $fetch.create({
     "Upgrade-Insecure-Requests": "1",
     "Sec-Fetch-Dest": "document",
     "Sec-Fetch-Mode": "navigate",
-    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-Site": "cross-site",
     "Sec-Fetch-User": "?1",
+    "DNT": "1",
+    "Sec-CH-UA": "\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Google Chrome\";v=\"122\"",
+    "Sec-CH-UA-Mobile": "?0",
+    "Sec-CH-UA-Platform": "\"Windows\"",
   },
-  timeout: 15000,
+  timeout: 20000,
   retry: 3,
-  retryDelay: 2000,
+  retryDelay: 3000,
   onRequest({ options, request }) {
+    if (request.toString().includes("3dmgame.com")) {
+      const headers = new Headers(options.headers)
+      headers.set("Referer", "https://www.3dmgame.com/")
+      headers.set("Origin", "https://www.3dmgame.com")
+      options.headers = Object.fromEntries(headers.entries())
+    }
     logger.info("发起请求", {
       url: request,
       headers: options.headers,
@@ -28,8 +38,8 @@ export const myFetch = $fetch.create({
   onRequestError({ error, request }) {
     logger.error("请求错误", {
       url: request,
-      error: error.message,
-      stack: error.stack,
+      error: error?.message || "Unknown error",
+      stack: error?.stack,
     })
   },
   onResponse({ response }) {
@@ -46,7 +56,7 @@ export const myFetch = $fetch.create({
   onResponseError({ response, error }) {
     logger.error("响应错误", {
       status: response.status,
-      error: error.message,
+      error: error?.message || "Unknown error",
       data: response._data,
     })
     if (response.status >= 500 || response.status === 506) {

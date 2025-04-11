@@ -63,24 +63,25 @@ const metacritic = defineSource(async () => {
       return []
     }
 
-    // 检查响应是否包含预期的HTML内容
-    if (!response.includes("listb selectpost") && !response.includes("original_list")) {
-      logger.error("获取3DM评测文章失败: 响应内容不符合预期", {
-        preview: response.substring(0, 200),
-      })
-      return []
-    }
+    // 记录响应内容的前200个字符，用于调试
+    logger.info("响应内容预览:", {
+      preview: response.substring(0, 200),
+    })
 
     const $ = load(response)
     const news: NewsItem[] = []
 
-    // 尝试不同的选择器
-    const items = $(".listb.selectpost, .original_list")
+    // 更新选择器以适应新的HTML结构
+    const items = $(".selectpost, .original_list, .list_box, .news-item")
     logger.info("找到评测文章数量:", { count: items.length })
 
     if (items.length === 0) {
       logger.error("未找到评测文章，HTML结构可能已改变", {
         availableClasses: $("[class]").map((_, el) => $(el).attr("class")).get().slice(0, 10),
+      })
+      // 记录完整的HTML结构
+      logger.error("完整HTML结构:", {
+        html: $.html(),
       })
       return []
     }
@@ -88,11 +89,11 @@ const metacritic = defineSource(async () => {
     items.each((_, el) => {
       try {
         const $el = $(el)
-        // 支持多个可能的选择器
-        const $title = $el.find(".a_bt.selectarcpost, .bt a")
-        const $time = $el.find(".time, .time_box")
-        const $score = $el.find(".font, .score")
-        const $desc = $el.find(".p p, .text_box")
+        // 更新选择器以适应新的HTML结构
+        const $title = $el.find("a[title], .bt a, h3 a, .tit a")
+        const $time = $el.find(".time, .time_box, .date")
+        const $score = $el.find(".font, .score, .rating")
+        const $desc = $el.find(".p p, .text_box, .desc")
 
         const title = $title.text().trim()
         const url = $title.attr("href")
