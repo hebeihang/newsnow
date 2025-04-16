@@ -59,11 +59,12 @@ export default defineSource(async () => {
     if (title && url) {
       items.push({
         id: url,
-        title,
+        title: `[游戏分析] ${title}`,
         url,
         pubDate: date,
         extra: {
           hover: excerpt,
+          info: "游戏分析",
         },
       })
     }
