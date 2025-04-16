@@ -410,6 +410,14 @@ export const originSources = {
     title: "游戏销量榜",
     interval: Time.Default,
   },
+  "deconstructoroffun": {
+    name: "Deconstructor of Fun",
+    type: "dev",
+    column: "world", // 或 "dev"，需与前端一致
+    color: "green",
+    interval: Time.Slow,
+    home: "https://www.deconstructoroffun.com/blog",
+  },
 } as const satisfies Record<string, OriginSource>
 
 export function genSources() {

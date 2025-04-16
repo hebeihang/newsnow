@@ -76,7 +76,7 @@
   "gamedeveloper": {
     "redirect": "gamedeveloper-news",
     "name": "GameDev",
-    "type": "dev",
+    "type": "realtime",
     "column": "world",
     "home": "https://www.gamedeveloper.com",
     "color": "blue",
@@ -140,12 +140,20 @@
     "title": "开发"
   },
   "famitsu_rank": {
+    "title": "游戏销量榜",
     "name": "Famitsu",
     "type": "hottest",
     "column": "jp",
     "home": "https://www.famitsu.com",
     "color": "blue",
-    "interval": 600000,
-    "title": "游戏销量榜"
+    "interval": 600000
+  },
+  "deconstructoroffun": {
+    "name": "Deconstructor of Fun",
+    "type": "dev",
+    "column": "world",
+    "home": "https://www.deconstructoroffun.com/blog",
+    "color": "green",
+    "interval": 3600000
   }
 }

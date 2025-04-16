@@ -8,48 +8,56 @@ export default defineEventHandler(async (event): Promise<SourceResponse> => {
     const query = getQuery(event)
     const latest = query.latest !== undefined && query.latest !== "false"
     let id = query.id as SourceID
-    const isValid = (id: SourceID) => !id || !sources[id] || !getters[id]
+
+    if (!id) {
+      throw createError({
+        statusCode: 400,
+        message: "Missing source id",
+      })
+    }
+
+    const isValid = (id: SourceID) => !sources[id] || !getters[id]
 
     if (isValid(id)) {
       const redirectID = sources?.[id]?.redirect
       if (redirectID) id = redirectID
-      if (isValid(id)) throw new Error("Invalid source id")
+      if (isValid(id)) {
+        throw createError({
+          statusCode: 404,
+          message: `Invalid source id: ${id}`,
+        })
+      }
     }
 
     const cacheTable = await getCacheTable()
-    // Date.now() in Cloudflare Worker will not update throughout the entire runtime.
     const now = Date.now()
     let cache: CacheInfo | undefined
+
     if (cacheTable) {
-      cache = await cacheTable.get(id)
-      if (cache) {
-      // if (cache) {
-        // interval 刷新间隔，对于缓存失效也要执行的。本质上表示本来内容更新就很慢，这个间隔内可能内容压根不会更新。
-        // 默认 10 分钟，是低于 TTL 的，但部分 Source 的更新间隔会超过 TTL，甚至有的一天更新一次。
-        if (now - cache.updated < sources[id].interval) {
-          return {
-            status: "success",
-            id,
-            updatedTime: now,
-            items: cache.items,
-          }
+      try {
+        cache = await cacheTable.get(id)
+      } catch (e) {
+        logger.error(`Failed to get cache for ${id}:`, e)
+      }
+    }
+
+    if (cache) {
+      if (now - cache.updated < sources[id].interval) {
+        return {
+          status: "success",
+          id,
+          updatedTime: now,
+          items: cache.items,
         }
+      }
 
-        // 而 TTL 缓存失效时间，在时间范围内，就算内容更新了也要用这个缓存。
-        // 复用缓存是不会更新时间的。
-        if (now - cache.updated < TTL) {
-          // 有 latest
-          // 没有 latest，但服务器禁止登录
-
-          // 没有 latest
-          // 有 latest，服务器可以登录但没有登录
-          if (!latest || (!event.context.disabledLogin && !event.context.user)) {
-            return {
-              status: "cache",
-              id,
-              updatedTime: cache.updated,
-              items: cache.items,
-            }
+      if (now - cache.updated < TTL) {
+        if (!latest || (!event.context.disabledLogin && !event.context.user)) {
+          return {
+            status: "cache",
+            id,
+            updatedTime: cache.updated,
+            items: cache.items,
           }
         }
       }
@@ -58,10 +66,17 @@ export default defineEventHandler(async (event): Promise<SourceResponse> => {
     try {
       const newData = (await getters[id]()).slice(0, 30)
       if (cacheTable && newData.length) {
-        if (event.context.waitUntil) event.context.waitUntil(cacheTable.set(id, newData))
-        else await cacheTable.set(id, newData)
+        try {
+          if (event.context.waitUntil) {
+            event.context.waitUntil(cacheTable.set(id, newData))
+          } else {
+            await cacheTable.set(id, newData)
+          }
+        } catch (e) {
+          logger.error(`Failed to set cache for ${id}:`, e)
+        }
       }
-      logger.success(`fetch ${id} latest`)
+      logger.success(`Successfully fetched latest data for ${id}`)
       return {
         status: "success",
         id,
@@ -69,19 +84,22 @@ export default defineEventHandler(async (event): Promise<SourceResponse> => {
         items: newData,
       }
     } catch (e) {
-      if (cache!) {
+      logger.error(`Failed to fetch data for ${id}:`, e)
+      if (cache) {
         return {
           status: "cache",
           id,
           updatedTime: cache.updated,
           items: cache.items,
         }
-      } else {
-        throw e
       }
+      throw e
     }
   } catch (e: any) {
-    logger.error(e)
+    logger.error("API error:", e)
+    if (e.statusCode) {
+      throw e
+    }
     throw createError({
       statusCode: 500,
       message: e instanceof Error ? e.message : "Internal Server Error",

@@ -42,4 +42,15 @@ export default defineConfig({
     pwa(),
     nitro(),
   ],
+  server: {
+    port: 5173,
+    host: true, // 允许外部访问
+    open: true, // 自动打开浏览器
+    proxy: {
+      "/api": {
+        target: "http://localhost:5173",
+        changeOrigin: true,
+      },
+    },
+  },
 })

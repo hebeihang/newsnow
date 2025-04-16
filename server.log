@@ -1,0 +1,536 @@
+
+> newsnow@0.0.24 dev
+> npm run presource && vite dev
+
+
+> newsnow@0.0.24 presource
+> tsx ./scripts/favicon.ts && tsx ./scripts/source.ts
+
+[36mℹ[39m Generated pinyin.json
+[36mℹ[39m Generated sources.json
+
+♻️  Generating routes...
+✅ Processed routes in 586ms
+[36mℹ[39m The server endpoints are accessible under the "/api" path.                 
+
+  [32m[1mVITE[22m v6.2.0[39m  [2mready in [0m[1m5646[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://192.168.11.5:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.24.240.1:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.19.128.1:[1m5173[22m/[39m
+  [32m➜[39m  [1mUnoCSS Inspector[22m: [36mhttp://localhost:[1m5173[22m/__unocss/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[90m[[90mnitro[90m][39m [32m✔[39m Nitro Server built in 14505 ms
+[36mℹ[39m db:  Database {                                                    [90m22:14:52[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:14:52[39m
+[32m✔[39m get entire (...) cache                                             [90m22:14:52[39m
+[36mℹ[39m db:  Database {                                                    [90m22:14:52[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:14:52[39m
+[32m✔[39m get 3dm-news cache                                                 [90m22:14:52[39m
+[36mℹ[39m db:  Database {                                                    [90m22:14:52[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:14:52[39m
+[32m✔[39m get 3dm-metacritic cache                                           [90m22:14:52[39m
+[36mℹ[39m db:  Database {                                                    [90m22:14:52[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:14:52[39m
+[32m✔[39m get gamesindustry-news cache                                       [90m22:14:52[39m
+[36mℹ[39m db:  Database {                                                    [90m22:14:52[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:14:52[39m
+[32m✔[39m get indienova-recent cache                                         [90m22:14:52[39m
+[36mℹ[39m db:  Database {                                                    [90m22:14:57[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:14:57[39m
+[32m✔[39m get entire (...) cache                                             [90m22:14:57[39m
+[36mℹ[39m db:  Database {                                                    [90m22:14:57[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:14:57[39m
+[32m✔[39m get 3dm-news cache                                                 [90m22:14:57[39m
+[36mℹ[39m db:  Database {                                                    [90m22:14:57[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:14:57[39m
+[32m✔[39m get 3dm-metacritic cache                                           [90m22:14:57[39m
+[36mℹ[39m db:  Database {                                                    [90m22:14:57[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:14:57[39m
+[32m✔[39m get gamesindustry-news cache                                       [90m22:14:57[39m
+[36mℹ[39m db:  Database {                                                    [90m22:14:57[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:14:57[39m
+[32m✔[39m get indienova-recent cache                                         [90m22:14:57[39m
+[36mℹ[39m db:  Database {                                                    [90m22:14:57[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:14:57[39m
+[32m✔[39m get thisisgame-news cache                                          [90m22:14:57[39m
+[36mℹ[39m db:  Database {                                                    [90m22:14:59[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:14:59[39m
+[32m✔[39m get gamebiz-news cache                                             [90m22:14:59[39m
+[36mℹ[39m db:  Database {                                                    [90m22:15:01[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:15:01[39m
+[32m✔[39m get gamedeveloper-news cache                                       [90m22:15:01[39m
+[36mℹ[39m db:  Database {                                                    [90m22:15:02[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:15:02[39m
+[32m✔[39m get entire (...) cache                                             [90m22:15:02[39m
+[36mℹ[39m db:  Database {                                                    [90m22:15:02[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:15:02[39m
+[32m✔[39m get indienova-development cache                                    [90m22:15:02[39m
+
+[41m[30m ERROR [39m[49m API error: Invalid source id: deconstructoroffun              [90m22:15:02[39m
+
+    [90mat [39mcreateError ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:71:15[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/dist/.nitro/dev/index.mjs:5013:15[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:1935:24[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2248:34[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2009:31[39m)
+    [90mat [39mprocess.processTicksAndRejections ([36mnode:internal/process/task_queues:105:5[39m)
+    [90mat [39masync toNodeHandle ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2301:7[39m)
+    [90mat [39masync ufetch ([36m/E:/web/newsnow/node_modules/.pnpm/unenv@1.10.0/node_modules/unenv/runtime/fetch/index.mjs:9:17[39m)
+    [90mat [39masync sendProxy ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:1180:16[39m)
+    [90mat [39masync Object.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2009:19[39m)
+
+  [cause]: Invalid source id: deconstructoroffun
+
+
+
+[41m[30m ERROR [39m[49m API error: Invalid source id: deconstructoroffun              [90m22:15:04[39m
+
+    [90mat [39mcreateError ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:71:15[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/dist/.nitro/dev/index.mjs:5013:15[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:1935:24[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2248:34[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2009:31[39m)
+    [90mat [39mprocess.processTicksAndRejections ([36mnode:internal/process/task_queues:105:5[39m)
+    [90mat [39masync toNodeHandle ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2301:7[39m)
+    [90mat [39masync ufetch ([36m/E:/web/newsnow/node_modules/.pnpm/unenv@1.10.0/node_modules/unenv/runtime/fetch/index.mjs:9:17[39m)
+    [90mat [39masync sendProxy ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:1180:16[39m)
+    [90mat [39masync Object.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2009:19[39m)
+
+  [cause]: Invalid source id: deconstructoroffun
+
+
+
+[41m[30m ERROR [39m[49m API error: Invalid source id: deconstructoroffun              [90m22:15:04[39m
+
+    [90mat [39mcreateError ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:71:15[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/dist/.nitro/dev/index.mjs:5013:15[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:1935:24[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2248:34[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2009:31[39m)
+    [90mat [39mprocess.processTicksAndRejections ([36mnode:internal/process/task_queues:105:5[39m)
+    [90mat [39masync toNodeHandle ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2301:7[39m)
+    [90mat [39masync ufetch ([36m/E:/web/newsnow/node_modules/.pnpm/unenv@1.10.0/node_modules/unenv/runtime/fetch/index.mjs:9:17[39m)
+    [90mat [39masync sendProxy ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:1180:16[39m)
+    [90mat [39masync Object.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2009:19[39m)
+
+  [cause]: Invalid source id: deconstructoroffun
+
+
+
+[41m[30m ERROR [39m[49m API error: Invalid source id: deconstructoroffun              [90m22:15:04[39m
+
+    [90mat [39mcreateError ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:71:15[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/dist/.nitro/dev/index.mjs:5013:15[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:1935:24[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2248:34[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2009:31[39m)
+    [90mat [39mprocess.processTicksAndRejections ([36mnode:internal/process/task_queues:105:5[39m)
+    [90mat [39masync toNodeHandle ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2301:7[39m)
+    [90mat [39masync ufetch ([36m/E:/web/newsnow/node_modules/.pnpm/unenv@1.10.0/node_modules/unenv/runtime/fetch/index.mjs:9:17[39m)
+    [90mat [39masync sendProxy ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:1180:16[39m)
+    [90mat [39masync Object.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2009:19[39m)
+
+  [cause]: Invalid source id: deconstructoroffun
+
+
+
+[41m[30m ERROR [39m[49m API error: Invalid source id: deconstructoroffun              [90m22:15:05[39m
+
+    [90mat [39mcreateError ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:71:15[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/dist/.nitro/dev/index.mjs:5013:15[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:1935:24[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2248:34[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2009:31[39m)
+    [90mat [39mprocess.processTicksAndRejections ([36mnode:internal/process/task_queues:105:5[39m)
+    [90mat [39masync toNodeHandle ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2301:7[39m)
+    [90mat [39masync ufetch ([36m/E:/web/newsnow/node_modules/.pnpm/unenv@1.10.0/node_modules/unenv/runtime/fetch/index.mjs:9:17[39m)
+    [90mat [39masync sendProxy ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:1180:16[39m)
+    [90mat [39masync Object.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2009:19[39m)
+
+  [cause]: Invalid source id: deconstructoroffun
+
+
+
+[41m[30m ERROR [39m[49m API error: Invalid source id: deconstructoroffun              [90m22:15:05[39m
+
+    [90mat [39mcreateError ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:71:15[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/dist/.nitro/dev/index.mjs:5013:15[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:1935:24[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2248:34[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2009:31[39m)
+    [90mat [39mprocess.processTicksAndRejections ([36mnode:internal/process/task_queues:105:5[39m)
+    [90mat [39masync toNodeHandle ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2301:7[39m)
+    [90mat [39masync ufetch ([36m/E:/web/newsnow/node_modules/.pnpm/unenv@1.10.0/node_modules/unenv/runtime/fetch/index.mjs:9:17[39m)
+    [90mat [39masync sendProxy ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:1180:16[39m)
+    [90mat [39masync Object.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2009:19[39m)
+
+  [cause]: Invalid source id: deconstructoroffun
+
+
+
+[41m[30m ERROR [39m[49m API error: Invalid source id: deconstructoroffun              [90m22:15:05[39m
+
+    [90mat [39mcreateError ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:71:15[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/dist/.nitro/dev/index.mjs:5013:15[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:1935:24[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2248:34[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2009:31[39m)
+    [90mat [39mprocess.processTicksAndRejections ([36mnode:internal/process/task_queues:105:5[39m)
+    [90mat [39masync toNodeHandle ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2301:7[39m)
+    [90mat [39masync ufetch ([36m/E:/web/newsnow/node_modules/.pnpm/unenv@1.10.0/node_modules/unenv/runtime/fetch/index.mjs:9:17[39m)
+    [90mat [39masync sendProxy ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:1180:16[39m)
+    [90mat [39masync Object.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2009:19[39m)
+
+  [cause]: Invalid source id: deconstructoroffun
+
+
+
+[41m[30m ERROR [39m[49m API error: Invalid source id: deconstructoroffun              [90m22:15:05[39m
+
+    [90mat [39mcreateError ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:71:15[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/dist/.nitro/dev/index.mjs:5013:15[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:1935:24[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2248:34[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2009:31[39m)
+    [90mat [39mprocess.processTicksAndRejections ([36mnode:internal/process/task_queues:105:5[39m)
+    [90mat [39masync toNodeHandle ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2301:7[39m)
+    [90mat [39masync ufetch ([36m/E:/web/newsnow/node_modules/.pnpm/unenv@1.10.0/node_modules/unenv/runtime/fetch/index.mjs:9:17[39m)
+    [90mat [39masync sendProxy ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:1180:16[39m)
+    [90mat [39masync Object.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2009:19[39m)
+
+  [cause]: Invalid source id: deconstructoroffun
+
+
+
+[41m[30m ERROR [39m[49m API error: Invalid source id: deconstructoroffun              [90m22:16:08[39m
+
+    [90mat [39mcreateError ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:71:15[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/dist/.nitro/dev/index.mjs:5013:15[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:1935:24[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2248:34[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2009:31[39m)
+    [90mat [39mprocess.processTicksAndRejections ([36mnode:internal/process/task_queues:105:5[39m)
+    [90mat [39masync toNodeHandle ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2301:7[39m)
+    [90mat [39masync ufetch ([36m/E:/web/newsnow/node_modules/.pnpm/unenv@1.10.0/node_modules/unenv/runtime/fetch/index.mjs:9:17[39m)
+    [90mat [39masync sendProxy ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:1180:16[39m)
+    [90mat [39masync Object.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2009:19[39m)
+
+  [cause]: Invalid source id: deconstructoroffun
+
+
+
+[41m[30m ERROR [39m[49m API error: Invalid source id: deconstructoroffun              [90m22:16:09[39m
+
+    [90mat [39mcreateError ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:71:15[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/dist/.nitro/dev/index.mjs:5013:15[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:1935:24[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2248:34[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2009:31[39m)
+    [90mat [39mprocess.processTicksAndRejections ([36mnode:internal/process/task_queues:105:5[39m)
+    [90mat [39masync toNodeHandle ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2301:7[39m)
+    [90mat [39masync ufetch ([36m/E:/web/newsnow/node_modules/.pnpm/unenv@1.10.0/node_modules/unenv/runtime/fetch/index.mjs:9:17[39m)
+    [90mat [39masync sendProxy ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:1180:16[39m)
+    [90mat [39masync Object.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2009:19[39m)
+
+  [cause]: Invalid source id: deconstructoroffun
+
+
+
+[41m[30m ERROR [39m[49m API error: Invalid source id: deconstructoroffun              [90m22:16:10[39m
+
+    [90mat [39mcreateError ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:71:15[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/dist/.nitro/dev/index.mjs:5013:15[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:1935:24[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2248:34[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2009:31[39m)
+    [90mat [39mprocess.processTicksAndRejections ([36mnode:internal/process/task_queues:105:5[39m)
+    [90mat [39masync toNodeHandle ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2301:7[39m)
+    [90mat [39masync ufetch ([36m/E:/web/newsnow/node_modules/.pnpm/unenv@1.10.0/node_modules/unenv/runtime/fetch/index.mjs:9:17[39m)
+    [90mat [39masync sendProxy ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:1180:16[39m)
+    [90mat [39masync Object.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2009:19[39m)
+
+  [cause]: Invalid source id: deconstructoroffun
+
+
+[36mℹ[39m db:  Database {                                                    [90m22:16:13[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:16:13[39m
+[32m✔[39m get entire (...) cache                                             [90m22:16:13[39m
+[36mℹ[39m db:  Database {                                                    [90m22:16:13[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:16:13[39m
+[32m✔[39m get indienova-development cache                                    [90m22:16:13[39m
+
+[41m[30m ERROR [39m[49m API error: Invalid source id: deconstructoroffun              [90m22:16:13[39m
+
+    [90mat [39mcreateError ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:71:15[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/dist/.nitro/dev/index.mjs:5013:15[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:1935:24[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2248:34[39m)
+    [90mat [39mObject.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2009:31[39m)
+    [90mat [39mprocess.processTicksAndRejections ([36mnode:internal/process/task_queues:105:5[39m)
+    [90mat [39masync toNodeHandle ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2301:7[39m)
+    [90mat [39masync ufetch ([36m/E:/web/newsnow/node_modules/.pnpm/unenv@1.10.0/node_modules/unenv/runtime/fetch/index.mjs:9:17[39m)
+    [90mat [39masync sendProxy ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:1180:16[39m)
+    [90mat [39masync Object.handler ([36m/E:/web/newsnow/node_modules/.pnpm/h3@1.15.1/node_modules/h3/dist/index.mjs:2009:19[39m)
+
+  [cause]: Invalid source id: deconstructoroffun
+
+
+[2m22:16:55[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/common/search-bar/index.tsx, /src/routes/c.$column.tsx, /src/components/column/index.tsx, /src/routes/__root.tsx, /src/routes/index.tsx, /src/components/header/index.tsx, /src/components/common/overlay-scrollbar/index.tsx, /src/components/navbar.tsx, /src/components/column/card.tsx, /src/components/column/dnd.tsx[22m
+[36mℹ[39m db:  Database {                                                    [90m22:16:56[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:16:56[39m
+[32m✔[39m get entire (...) cache                                             [90m22:16:56[39m
+[36mℹ[39m db:  Database {                                                    [90m22:16:56[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:16:56[39m
+[32m✔[39m get entire (...) cache                                             [90m22:16:56[39m
+[36mℹ[39m db:  Database {                                                    [90m22:16:56[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:16:56[39m
+[32m✔[39m get entire (...) cache                                             [90m22:16:56[39m
+[36mℹ[39m db:  Database {                                                    [90m22:16:56[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:16:56[39m
+[32m✔[39m get 3dm-news cache                                                 [90m22:16:56[39m
+[36mℹ[39m db:  Database {                                                    [90m22:16:56[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:16:56[39m
+[32m✔[39m get 3dm-metacritic cache                                           [90m22:16:56[39m
+[36mℹ[39m db:  Database {                                                    [90m22:16:56[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:16:56[39m
+[32m✔[39m get gamesindustry-news cache                                       [90m22:16:56[39m
+[36mℹ[39m db:  Database {                                                    [90m22:16:56[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:16:56[39m
+[32m✔[39m get gamebiz-news cache                                             [90m22:16:56[39m
+[36mℹ[39m db:  Database {                                                    [90m22:16:56[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:16:56[39m
+[32m✔[39m get gamedeveloper-news cache                                       [90m22:16:56[39m
+[36mℹ[39m db:  Database {                                                    [90m22:16:56[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:16:56[39m
+[32m✔[39m get thisisgame-news cache                                          [90m22:16:56[39m
+[36mℹ[39m db:  Database {                                                    [90m22:16:56[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:16:56[39m
+[32m✔[39m get indienova-recent cache                                         [90m22:16:56[39m
+[36mℹ[39m db:  Database {                                                    [90m22:16:56[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:16:56[39m
+[32m✔[39m get 3dm-news cache                                                 [90m22:16:56[39m
+[36mℹ[39m db:  Database {                                                    [90m22:16:56[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:16:56[39m
+[32m✔[39m get 3dm-metacritic cache                                           [90m22:16:56[39m
+[36mℹ[39m db:  Database {                                                    [90m22:16:57[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:16:57[39m
+[32m✔[39m get gamesindustry-news cache                                       [90m22:16:57[39m
+[36mℹ[39m db:  Database {                                                    [90m22:16:57[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:16:57[39m
+[32m✔[39m get gamebiz-news cache                                             [90m22:16:57[39m
+[36mℹ[39m db:  Database {                                                    [90m22:16:57[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:16:57[39m
+[32m✔[39m get gamedeveloper-news cache                                       [90m22:16:57[39m
+[36mℹ[39m db:  Database {                                                    [90m22:16:57[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:16:57[39m
+[32m✔[39m get thisisgame-news cache                                          [90m22:16:57[39m
+[36mℹ[39m db:  Database {                                                    [90m22:16:57[39m
+  name: [32m'E:\\web\\newsnow\\.data\\db.sqlite3'[39m,
+  open: [33mtrue[39m,
+  inTransaction: [33mfalse[39m,
+  readonly: [33mfalse[39m,
+  memory: [33mfalse[39m
+}
+[32m✔[39m init cache table                                                   [90m22:16:57[39m
+[32m✔[39m get indienova-recent cache                                         [90m22:16:57[39m
+[90m[[90mnitro[90m][39m [32m✔[39m Nitro Server built in 1945 ms

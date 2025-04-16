@@ -12,6 +12,9 @@
   "homepage": "https://github.com/hebeihang/newsnow",
   "scripts": {
     "dev": "npm run presource && vite dev",
+    "dev:background": "start /B cmd /c \"npm run dev > server.log 2>&1\"",
+    "dev:stop": "taskkill /F /IM node.exe",
+    "dev:log": "type server.log",
     "build": "npm run presource && vite build",
     "lint": "eslint",
     "presource": "tsx ./scripts/favicon.ts && tsx ./scripts/source.ts",
