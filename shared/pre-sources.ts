@@ -413,10 +413,19 @@ export const originSources = {
   "deconstructoroffun": {
     name: "Deconstructor of Fun",
     type: "dev",
-    column: "world", // 或 "dev"，需与前端一致
+    column: "world",
     color: "green",
     interval: Time.Slow,
     home: "https://www.deconstructoroffun.com/blog",
+  },
+  "newzoo": {
+    name: "Newzoo",
+    type: "hottest",
+    column: "world",
+    color: "green",
+    interval: Time.Slow,
+    home: "https://newzoo.com/resources",
+    title: "游戏市场数据",
   },
 } as const satisfies Record<string, OriginSource>
 

@@ -155,5 +155,14 @@
     "home": "https://www.deconstructoroffun.com/blog",
     "color": "green",
     "interval": 3600000
+  },
+  "newzoo": {
+    "title": "游戏市场数据",
+    "name": "Newzoo",
+    "type": "hottest",
+    "column": "world",
+    "home": "https://newzoo.com/resources",
+    "color": "green",
+    "interval": 3600000
   }
 }

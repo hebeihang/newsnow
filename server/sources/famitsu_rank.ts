@@ -38,7 +38,7 @@ export default defineSource(async () => {
 
   return games.map(game => ({
     id: `${game.platform}-${game.title}`,
-    title: `${game.ranking}|${game.platform}|${game.title}`,
+    title: `${game.platform}|${game.title}`,
     url: "https://www.famitsu.com/ranking/game-sales",
     extra: {
       info: `周销量：${game.weeklySales}本|累计：${game.totalSales}本`,
