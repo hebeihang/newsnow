@@ -84,7 +84,7 @@ const metacritic = defineSource(async () => {
     const news: NewsItem[] = []
 
     // 更新选择器以适应新的HTML结构
-    const items = $(".selectpost, .original_list, .list_box, .news-item, .news_list li")
+    const items = $(".listb.selectpost")
     console.log("找到评测文章数量:", { count: items.length })
 
     if (items.length === 0) {
@@ -102,10 +102,10 @@ const metacritic = defineSource(async () => {
       try {
         const $el = $(el)
         // 更新选择器以适应新的HTML结构
-        const $title = $el.find("a[title], .bt a, h3 a, .tit a, .news_tit a")
-        const $time = $el.find(".time, .time_box, .date, .news_time")
-        const $score = $el.find(".font, .score, .rating, .news_score")
-        const $desc = $el.find(".p p, .text_box, .desc, .news_desc")
+        const $title = $el.find(".bt .a_bt.selectarcpost")
+        const $time = $el.find(".btn_list .time")
+        const $score = $el.find(".text .p .font")
+        const $desc = $el.find(".text .p p")
 
         const title = $title.text().trim()
         const url = $title.attr("href")
