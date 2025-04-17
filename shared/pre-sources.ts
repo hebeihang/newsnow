@@ -389,7 +389,7 @@ export const originSources = {
     sub: {
       recent: {
         title: "独立游戏",
-        type: "realtime",
+        type: "hottest",
       },
       article: {
         title: "文章",

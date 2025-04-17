@@ -123,7 +123,7 @@
   },
   "indienova-recent": {
     "name": "IndieNova",
-    "type": "realtime",
+    "type": "hottest",
     "column": "china",
     "home": "https://indienova.com",
     "color": "violet",
