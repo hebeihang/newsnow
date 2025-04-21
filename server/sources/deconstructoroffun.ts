@@ -60,22 +60,36 @@ export default defineSource(async () => {
     throw new Error("No blog items found")
   }
 
+  // 分类英文转中文映射
+  const categoryMap: Record<string, string> = {
+    Business: "商业",
+    Design: "设计",
+    Production: "制作",
+    Monetization: "变现",
+    UA: "用户获取",
+    Tech: "技术",
+    // 可根据实际补充
+  }
+
   blogItems.each((_, element) => {
     const $el = $(element)
-    const title = $el.find("h2.entry-title a").text().trim()
-    const link = $el.find("h2.entry-title a").attr("href")
-    const dateStr = $el.find("time.entry-date").attr("datetime") || $el.find("time.entry-date").text().trim()
+    // 先移除 time 标签再取标题
+    const $titleA = $el.find("h2.entry-title a")
+    $titleA.find("time").remove()
+    const title = $titleA.text().trim()
+
+    const link = $titleA.attr("href")
     const excerpt = $el.find(".entry-content p").first().text().trim()
 
-    // 获取文章分类
-    const categories: string[] = []
-    $el.find(".blog-category").each((_, el) => {
-      categories.push($(el).text().trim())
-    })
-    const category = categories.join("、") || "Business"
+    // 分类
+    let category = $el.find(".blog-category").text().trim() || "Business"
+    category = categoryMap[category] || category
+
+    // 日期
+    const dateStr = $el.find("header.entry-header time.dt-published").attr("datetime") || ""
+    const chineseDate = dateStr ? formatDateToChinese(dateStr) : ""
 
     if (title && link) {
-      // 移除任何现有的域名部分，只保留路径
       const cleanLink = link.replace(/^https?:\/\/[^/]+/, "")
       const url = `${BASE_URL}${cleanLink.startsWith("/") ? cleanLink : `/${cleanLink}`}`
 
@@ -83,10 +97,10 @@ export default defineSource(async () => {
         id: url,
         title,
         url,
-        pubDate: formatDateToChinese(dateStr), // 使用转换后的中文日期
+        pubDate: chineseDate,
         extra: {
           hover: excerpt,
-          info: category,
+          info: `${chineseDate}｜${category}`,
         },
       })
     }

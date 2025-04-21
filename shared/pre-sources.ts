@@ -419,13 +419,22 @@ export const originSources = {
     home: "https://www.deconstructoroffun.com/blog",
   },
   "newzoo": {
-    name: "Newzoo",
+    name: "newzoo",
     type: "hottest",
     column: "world",
     color: "green",
     interval: Time.Slow,
     home: "https://newzoo.com/resources",
     title: "游戏市场数据",
+  },
+  "pocketgamer": {
+    name: "PocketGamer",
+    type: "realtime",
+    column: "world",
+    color: "blue",
+    interval: Time.Slow,
+    home: "https://www.pocketgamer.biz/news/",
+    title: "产业新闻",
   },
 } as const satisfies Record<string, OriginSource>
 

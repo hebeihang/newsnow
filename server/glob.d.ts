@@ -28,6 +28,7 @@ declare module 'glob:./sources/{*.ts,**/index.ts}' {
   export const kuaishou: typeof import('./sources/kuaishou')
   export const linuxdo: typeof import('./sources/linuxdo')
   export const newzoo: typeof import('./sources/newzoo')
+  export const pocketgamer: typeof import('./sources/pocketgamer')
   export const producthunt: typeof import('./sources/producthunt')
   export const solidot: typeof import('./sources/solidot')
   export const sputniknewscn: typeof import('./sources/sputniknewscn')

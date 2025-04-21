@@ -114,7 +114,7 @@
   "indienova": {
     "redirect": "indienova-recent",
     "name": "IndieNova",
-    "type": "realtime",
+    "type": "hottest",
     "column": "china",
     "home": "https://indienova.com",
     "color": "violet",
@@ -158,11 +158,20 @@
   },
   "newzoo": {
     "title": "游戏市场数据",
-    "name": "Newzoo",
+    "name": "newzoo",
     "type": "hottest",
     "column": "world",
     "home": "https://newzoo.com/resources",
     "color": "green",
+    "interval": 3600000
+  },
+  "pocketgamer-news": {
+    "title": "产业新闻",
+    "name": "PocketGamer",
+    "type": "realtime",
+    "column": "world",
+    "home": "https://www.pocketgamer.biz/news/",
+    "color": "blue",
     "interval": 3600000
   }
 }
