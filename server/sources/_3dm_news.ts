@@ -18,6 +18,11 @@ const quick = defineSource(async () => {
   const $items = $(".Revision_list ul li.selectpost")
   console.log("找到新闻条目数:", $items.length)
 
+  if ($items.length === 0) {
+    // 输出部分HTML结构，便于排查
+    console.error("未找到新闻条目，HTML结构可能已改变。HTML预览：", $.html().substring(0, 500))
+  }
+
   $items.each((_, el) => {
     const $el = $(el)
     const $title = $el.find(".text .bt")

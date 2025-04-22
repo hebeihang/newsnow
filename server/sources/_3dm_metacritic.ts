@@ -88,13 +88,13 @@ const metacritic = defineSource(async () => {
     console.log("找到评测文章数量:", { count: items.length })
 
     if (items.length === 0) {
+      // 输出所有 class 名，便于排查
+      const allClasses = $("[class]").map((_, el) => $(el).attr("class")).get()
       console.error("未找到评测文章，HTML结构可能已改变", {
-        availableClasses: $("[class]").map((_, el) => $(el).attr("class")).get().slice(0, 10),
+        availableClasses: allClasses.slice(0, 20),
       })
-      // 记录完整的HTML结构
-      console.error("完整HTML结构:", {
-        html: $.html(),
-      })
+      // 记录完整的HTML结构片段
+      console.error("完整HTML结构片段:", $.html().substring(0, 1000))
       return []
     }
 
