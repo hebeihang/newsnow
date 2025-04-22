@@ -435,7 +435,6 @@ export const originSources = {
     interval: Time.Slow,
     home: "https://www.pocketgamer.biz/news/",
     title: "产业新闻",
-    disable: true,
   },
 } as const satisfies Record<string, OriginSource>
 
