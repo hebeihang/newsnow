@@ -199,5 +199,5 @@ const metacritic = defineSource(async () => {
 })
 
 export default {
-  "3dm-metacritic": metacritic,
+  "3dm-metacritic": Object.assign(metacritic, { interval: 60 * 60 * 1000 }), // 1小时，单位毫秒
 }

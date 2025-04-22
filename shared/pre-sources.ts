@@ -105,6 +105,7 @@ export const originSources = {
     type: "realtime",
     color: "blue",
     home: "https://36kr.com",
+    disable: true,
     column: "tech",
     sub: {
       news: {

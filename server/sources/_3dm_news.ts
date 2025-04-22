@@ -73,5 +73,5 @@ const quick = defineSource(async () => {
 })
 
 export default {
-  "3dm-news": quick,
+  "3dm-news": Object.assign(quick, { interval: 60 * 60 * 1000 }), // 1小时，单位毫秒
 }
