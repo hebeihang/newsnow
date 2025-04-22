@@ -104,7 +104,6 @@ export const originSources = {
     name: "36氪",
     type: "realtime",
     color: "blue",
-    disable: true,
     home: "https://36kr.com",
     column: "tech",
     sub: {
