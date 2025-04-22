@@ -1,9 +1,9 @@
 /* eslint-disable */
 
 declare module 'glob:./sources/{*.ts,**/index.ts}' {
+  export const _3dm_metacritic: typeof import('./sources/3dm_metacritic')
+  export const _3dm_news: typeof import('./sources/3dm_news')
   export const _36kr: typeof import('./sources/_36kr')
-  export const _3dm_metacritic: typeof import('./sources/_3dm_metacritic')
-  export const _3dm_news: typeof import('./sources/_3dm_news')
   export const baidu: typeof import('./sources/baidu')
   export const bilibili: typeof import('./sources/bilibili')
   export const cankaoxiaoxi: typeof import('./sources/cankaoxiaoxi')
